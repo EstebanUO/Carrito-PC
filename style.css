@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 31%, rgba(9,121,20,1) 81%);
+}
+
+header {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Bungee', cursive;
+  font-size: 1rem;
+  color: #28930b;
+  border-bottom: #167d70 2px groove;
+  padding: 0;
+  background-color: black;
+  border: double #07c41a;
+}
+
+select {
+  width: 12rem;
+  height: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px #07c41a;
+  border-radius: 15px;
+  background-color: #221007;
+  color: #ffff;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-product {
+  margin: 1rem;
+  width: 20rem;
+  height: 25rem;
+  border-radius: 15px;
+  border: groove #2675b2 2px;
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-product {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  height: 70%;
+}
+
+.name-product {
+  margin-top: 0.8rem;
+  color: #00ccff;
+  font-family: 'Macondo', cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.price-product {
+  font-family: 'Macondo', cursive;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f85b00;
+}
+
+.btn-add {
+  width: 8rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  background-color: lime;
+  color: white;
+  font-size: 1rem;
+}
+
+.btn-add:hover,
+.btn-add:focus {
+  cursor: pointer;
+  background-color: #28930b;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.btn-delete{
+  width: 8rem;
+  height: 1.5rem;
+  border-radius: 5px;
+  background-color: lime;
+  color: white;
+  font-size: 1rem;
+}
+
+.btn-delete:hover, 
+.btn-delete:focus{
+  cursor: pointer;
+  background-color: #fd0000;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.btn-newAdd{
+  width: 12rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: #28930b;
+  color: #000000;
+  font-size: 1rem;
+  padding: 0 1rem;
+  /* font-family: 'Macondo', cursive; */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-newAdd:hover,
+.btn-newAdd:focus{
+  width: 12rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #28930b;
+  font-size: 1rem;
+  padding: 0 1rem;
+  /* font-family: 'Macondo', cursive; */
+  font-weight: bold;
+}
+
+.modal{
+  width: 24rem;
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #27a105;
+  padding: 4rem;
+  margin-top: 8rem;
+  position: fixed;
+  font-family: 'Bungee', cursive;
+  /* display: none; */
+  border-radius: 3rem;
+  z-index: 0;
+  /* cursor: pointer; */
+}
+
+label{
+  padding: 1rem;
+}
+
+input{
+  font-size: 1rem;
+}
+
+#closeModal{
+  position: absolute;
+  background: red;
+  margin-left: 25rem;
+  width: 3rem;
+  height: 2rem;
+  margin-top: -1.95rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+#effectBlur{
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, .5);
+  backdrop-filter: blur(0.5rem);
+}
+
+#btn-Add{
+  width: 12rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: #37ff00;
+  color: #000000;
+  font-size: 1rem;
+  padding: 0 1rem;
+  /* font-family: 'Macondo', cursive; */
+  font-weight: bold;
+  cursor: pointer;
+}
