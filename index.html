@@ -9,15 +9,23 @@
   <title>Carrito de compras</title>
 </head>
 <body>
-  <header><h1>Tienda Componentes PC - Carrito de Compras</h1></header>
+  <header><h1>Tienda Componentes PC - Carrito de Compras</h1></header><br>
   <!-- Este Select se debe renderizar por Javascript consumiendo el objeto -->
+  <div class="allProducts">
+    Total a pagar: <br>
+    <span>0</span>USD
+  </div>
+  <div class="buyAllandCancel">
+    <button class="buyAll" id="compra">Comprar todo</button>
+    <button class="cancelAll" id="cancelar">Cancelar compra</button>
+  </div>
   <div id="effectBlur">
     <div class="modal">
       <button id="closeModal">X</button>
         <label for="">Product Name</label>
           <input type="text" id="newProduct" placeholder="Product"><br>
         <label for="">Price of the Product</label>
-          <input type="text" id="newPrice" placeholder="Price"><br>
+          <input type="number" id="newPrice" placeholder="Price"><br>
         <input type="file" name="" id="newImage"><br>
         <button disabled id="btn-Add">Add</button>
     </div>

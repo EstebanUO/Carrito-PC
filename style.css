@@ -50,8 +50,8 @@ main {
 
 .card-product {
   margin: 1rem;
-  width: 20rem;
-  height: 25rem;
+  width: 22rem;
+  height: 30rem;
   border-radius: 15px;
   border: groove #2675b2 2px;
   background-color: #000000;
@@ -201,4 +201,43 @@ input{
   /* font-family: 'Macondo', cursive; */
   font-weight: bold;
   cursor: pointer;
+}
+
+.allProducts{
+  font-size: 2.5rem;
+  color: #07c41a;
+  text-align: center;
+}
+
+.buyAll{
+  color: #ffffff;
+  background-color: #07c41a;
+  padding: .5rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.buyAll:hover{
+  background-color: #59f068;
+  color: #000000;
+}
+
+.cancelAll{
+  color: #ffffff;
+  background-color: #ff0000;
+  padding: .5rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+.cancelAll:hover{
+  background-color: #ec5e5e;
+  color: #000000;
+}
+
+#cantidad{
+  width: 3rem;
+  text-align: center;
 }

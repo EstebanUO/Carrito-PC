@@ -55,9 +55,13 @@ function createCards(peripherals) {
     deleteBoton.classList.add('btn-delete');
     deleteBoton.addEventListener('click', deleteCard);
 
+    const cant = document.createElement('input');
+    cant.setAttribute('id', 'cantidad');
+
     cuadro.appendChild(images);
     cuadro.appendChild(card_name);
     cuadro.appendChild(card_price);
+    cuadro.appendChild(cant);
     cuadro.appendChild(btn_boton);
     cuadro.appendChild(deleteBoton);
 
